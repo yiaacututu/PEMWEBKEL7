@@ -1,103 +1,61 @@
-/* ========================= */
-/* RESET */
-/* ========================= */
+:root {
+  --primary: #123524;
+  --bg: #ebf4dd;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
-
-/* ========================= */
-/* BODY */
-/* ========================= */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eef3e6;
-    color: #2f3e2e;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #010100;
 }
 
-/* ========================= */
-/* NAVBAR */
-/* ========================= */
+/* navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px 60px;
-    background-color: #cfdac4;
+  display: flex;
+  justify-content: space-between; /* sejajar horizontal*/
+  align-items: center; /* sejajar vertikal*/
+  padding: 1.4rem; /* 1.4 x 16*/
+  background-color: rgb(235, 244, 221);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
 
-/* Logo kiri */
-.logo {
-    font-size: 20px;
-    font-weight: bold;
+.navbar .navbar-logo {
+  font-zise: 2rem;
+  font-weight: 800;
+  color: #123524;
 }
 
-/* NAV CENTER */
-.navbar nav {
-    flex: 1; /* ambil sisa ruang */
-    display: flex;
-    justify-content: center; /* bikin menu ke tengah */
+.navbar .navbar-nav a {
+  color: #3e7b27;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0 1rem;
 }
 
-.navbar nav a {
-    margin: 0 25px;
-    text-decoration: none;
-    color: #2f3e2e;
-    font-weight: 500;
-    transition: 0.3s;
+.navbar .navbar-nav a:hover {
+  /*biar pas di klik warnanya berubah*/
+  color: var(--primary);
 }
 
-.navbar nav a:hover {
-    opacity: 0.7;
+.navbar .navbar-extra a {
+  color: #3e7b27;
+  margin: 0 0.3rem;
 }
 
-/* ========================= */
-/* HERO (kalau dipakai di home) */
-/* ========================= */
-.hero {
-    text-align: center;
-    padding: 120px 20px;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-/* ========================= */
-/* CONTENT PROFIL */
-/* ========================= */
-.content {
-    max-width: 900px;     
-    margin: 80px auto;    /* bikin center */
-    padding: 0 20px;
-}
-
-.content h1 {
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-.content p {
-    margin-bottom: 18px;
-    line-height: 1.6;
-}
-
-.content h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-/* ========================= */
-/* FOOTER */
-/* ========================= */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #cfdac4;
-    margin-top: 60px;
+.navbar .navbar-extra a:hover {
+  /*biar pas di klik warnanya berubah*/
+  color: var(--primary);
 }
