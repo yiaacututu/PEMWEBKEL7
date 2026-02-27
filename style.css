@@ -1,0 +1,103 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3e6;
+    color: #2f3e2e;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #cfdac4;
+}
+
+/* Logo kiri */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* NAV CENTER */
+.navbar nav {
+    flex: 1; /* ambil sisa ruang */
+    display: flex;
+    justify-content: center; /* bikin menu ke tengah */
+}
+
+.navbar nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: #2f3e2e;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    opacity: 0.7;
+}
+
+/* ========================= */
+/* HERO (kalau dipakai di home) */
+/* ========================= */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* ========================= */
+/* CONTENT PROFIL */
+/* ========================= */
+.content {
+    max-width: 900px;     
+    margin: 80px auto;    /* bikin center */
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.content p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.content h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cfdac4;
+    margin-top: 60px;
+}
