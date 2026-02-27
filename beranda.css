@@ -1,0 +1,84 @@
+:root {
+  --primary: #123524;
+  --bg: #ebf4dd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #010100;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* sejajar horizontal*/
+  align-items: center; /* sejajar vertikal*/
+  padding: 1.4rem; /* 1.4 x 16*/
+  background-color: rgb(235, 244, 221);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #123524;
+}
+
+.navbar .navbar-nav a {
+  color: #3e7b27;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  /*biar pas di klik warnanya berubah*/
+  color: var(--primary);
+}
+
+.navbar .navbar-extra a {
+  color: #3e7b27;
+  margin: 0 0.3rem;
+}
+
+.navbar .navbar-extra a:hover {
+  /*biar pas di klik warnanya berubah*/
+  color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh; /* dull satu halaman */
+  display: flex;
+  align-items: center;
+  background-image: url("../img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .content {
+  padding: 1.4rem 5%;
+  max-width: 60;
+}
+
+.hero .content h1 {
+  font-size: larger;
+  color: #123524;
+  text-shadow: 1px 3px 3px #ebf4dd;
+  line-height: 1.5;
+}
